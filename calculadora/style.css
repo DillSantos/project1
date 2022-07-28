@@ -1,0 +1,86 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, rgb(45, 11, 68), #a14eacf3);
+}
+
+
+
+.all-content {
+
+    justify-content: center;
+    min-height: 10vh;
+    margin-top: 10vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(5, 100px);
+    display: grid;
+}
+
+.all-content>button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: none;
+    outline: none;
+    background-color: #111;
+    color: #eee;
+
+}
+
+.all-content>button:hover {
+    background-color: rgb(219, 181, 219);
+    color: black;
+}
+
+.all-content>.operando {
+    background-color: rgba(111, 20, 172, 0.678);
+
+}
+
+.span-two {
+    grid-column: span 2;
+    min-height: 11vh;
+
+}
+
+#equal {
+    border-bottom-right-radius: 20px;
+    background-color: rgb(76, 12, 88);
+
+}
+
+#equal:hover {
+    background-color: black;
+    color: #eee;
+}
+
+
+
+.all-content>.output {
+    border-top-left-radius: 20px;
+    grid-column: 1/-1;
+    background-color: rgba(138, 31, 168, 0.623);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+    align-items: flex-end;
+}
+
+.all-content>.output>.pos-operation {
+    color: rgba(222, 209, 226, 0.959);
+    font-size: 2rem;
+}
+
+.all-content>.output>.operation {
+    color: #eee;
+    font-size: 2.5rem;
+}
